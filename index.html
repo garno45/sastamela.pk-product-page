@@ -1,125 +1,263 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SastaMela.pk - Wholesale Products</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f2f2f2;
-    }
-    header {
-      background: #ff6600;
-      color: white;
-      padding: 15px;
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 20px;
-      padding: 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .product {
-      background: white;
-      border-radius: 5px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      padding: 15px;
-      text-align: center;
-    }
-    .product img {
-      width: 100%;
-      max-height: 200px;
-      object-fit: cover;
-      border-radius: 5px;
-    }
-    .product h2 {
-      font-size: 18px;
-      margin: 10px 0 5px;
-      color: #333;
-    }
-    .product p {
-      font-size: 14px;
-      color: #666;
-    }
-    .price {
-      color: green;
-      font-weight: bold;
-      margin: 10px 0;
-    }
-    .btn {
-      background-color: #25D366;
-      color: white;
-      padding: 10px 16px;
-      text-decoration: none;
-      display: inline-block;
-      border-radius: 4px;
-      font-size: 14px;
-    }
-    .btn:hover {
-      background-color: #128C7E;
-    }
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 20px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    🛒 SastaMela.pk - Best Wholesale Deals!
-  </header>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+    />
 
-  <div class="products">
-    <!-- Product 1 -->
-    <div class="product">
-      <img src="https://img.alicdn.com/imgextra/i1/2206654846244/O1CN01i6PzXg1P6dX3nXemE_!!2206654846244.jpg" alt="Sneakers" />
-      <h2>Casual Sneakers 2025</h2>
-      <p>Unisex – Breathable, lightweight, imported design.</p>
-      <div class="price">Rs. 950</div>
-      <a class="btn" href="https://wa.me/923495465573?text=Hi%2C%20I%20want%20to%20order%20Sneakers%20from%20SastaMela.pk" target="_blank">📦 Order on WhatsApp</a>
+    <title>SastaMela.pk</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-neutral-50 group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#ededed] px-10 py-3">
+          <div class="flex items-center gap-8">
+            <div class="flex items-center gap-4 text-[#141414]">
+              <div class="size-4">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_6_319)">
+                    <path
+                      d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                      fill="currentColor"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_6_319"><rect width="48" height="48" fill="white"></rect></clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <h2 class="text-[#141414] text-lg font-bold leading-tight tracking-[-0.015em]">SastaMela.pk</h2>
+            </div>
+            <div class="flex items-center gap-9">
+              <a class="text-[#141414] text-sm font-medium leading-normal" href="#">Categories</a>
+              <a class="text-[#141414] text-sm font-medium leading-normal" href="#">Deals</a>
+              <a class="text-[#141414] text-sm font-medium leading-normal" href="#">New Arrivals</a>
+              <a class="text-[#141414] text-sm font-medium leading-normal" href="#">Best Sellers</a>
+              <a class="text-[#141414] text-sm font-medium leading-normal" href="#">Clearance</a>
+            </div>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <label class="flex flex-col min-w-40 !h-10 max-w-64">
+              <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+                <div
+                  class="text-neutral-500 flex border-none bg-[#ededed] items-center justify-center pl-4 rounded-l-lg border-r-0"
+                  data-icon="MagnifyingGlass"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                    ></path>
+                  </svg>
+                </div>
+                <input
+                  placeholder="Search"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#141414] focus:outline-0 focus:ring-0 border-none bg-[#ededed] focus:border-none h-full placeholder:text-neutral-500 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                  value=""
+                />
+              </div>
+            </label>
+            <div class="flex gap-2">
+              <button
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#ededed] text-[#141414] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+              >
+                <div class="text-[#141414]" data-icon="Heart" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32ZM128,206.8C109.74,196.16,32,147.69,32,94A46.06,46.06,0,0,1,78,48c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,147.61,146.24,196.15,128,206.8Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+              <button
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#ededed] text-[#141414] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+              >
+                <div class="text-[#141414]" data-icon="ShoppingCart" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M222.14,58.87A8,8,0,0,0,216,56H54.68L49.79,29.14A16,16,0,0,0,34.05,16H16a8,8,0,0,0,0,16h18L59.56,172.29a24,24,0,0,0,5.33,11.27,28,28,0,1,0,44.4,8.44h45.42A27.75,27.75,0,0,0,152,204a28,28,0,1,0,28-28H83.17a8,8,0,0,1-7.87-6.57L72.13,152h116a24,24,0,0,0,23.61-19.71l12.16-66.86A8,8,0,0,0,222.14,58.87ZM96,204a12,12,0,1,1-12-12A12,12,0,0,1,96,204Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,192,204Zm4-74.57A8,8,0,0,1,188.1,136H69.22L57.59,72H206.41Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="px-4 py-3">
+              <label class="flex flex-col min-w-40 h-12 w-full">
+                <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+                  <div
+                    class="text-neutral-500 flex border-none bg-[#ededed] items-center justify-center pl-4 rounded-l-lg border-r-0"
+                    data-icon="MagnifyingGlass"
+                    data-size="24px"
+                    data-weight="regular"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <input
+                    placeholder="Search for products"
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#141414] focus:outline-0 focus:ring-0 border-none bg-[#ededed] focus:border-none h-full placeholder:text-neutral-500 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                    value=""
+                  />
+                </div>
+              </label>
+            </div>
+            <div class="flex gap-3 p-3 flex-wrap pr-4">
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#ededed] pl-4 pr-4">
+                <p class="text-[#141414] text-sm font-medium leading-normal">Electronics</p>
+              </div>
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#ededed] pl-4 pr-4">
+                <p class="text-[#141414] text-sm font-medium leading-normal">Fashion</p>
+              </div>
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#ededed] pl-4 pr-4">
+                <p class="text-[#141414] text-sm font-medium leading-normal">Home &amp; Living</p>
+              </div>
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#ededed] pl-4 pr-4">
+                <p class="text-[#141414] text-sm font-medium leading-normal">Beauty</p>
+              </div>
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#ededed] pl-4 pr-4">
+                <p class="text-[#141414] text-sm font-medium leading-normal">Sports</p>
+              </div>
+            </div>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCsfBtzNAgVqJsIzbYTogWyo33m2Wz2293jDvs42HJfzwidTRZ5Luq4clnCDwET5Jm0ISxveEHg_upqWg4M501EzgFPHijTGoqMWoXLKREg-M_mV8B9ILOYSfoHOW9EMir1JYRlkz0kMyT-BjTMf21nx00n-4qqJi6m4SFjbm4g0DSPo0hB9WIDtmlTmJRfjfffjSTs354dMihJZmBQhRWEmfct2OThXpngQTj1HL_OfTFyjZiq_h1abmYl4RUZaDhketN1j6F-Ubw");'
+                ></div>
+                <div>
+                  <p class="text-[#141414] text-base font-medium leading-normal">Wireless Headphones</p>
+                  <p class="text-neutral-500 text-sm font-normal leading-normal">High-quality sound, noise-canceling</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDCezfsW1KP7rxRJk1xV0OipmnW-11Lne1_4KIyRC53Zug9PBQYbqFpgZxHHAFxgQx25d6sO41ez6ifnhoYI0bSoVUrSur2wFhijwYbXVBRvFv-Tvvhwhq_4nRry6YreeCbfCWbpeXGP8MqpsoDFiX0lDyKNbe37SMQzrFKa1fuVlJeSkg1VaXEqjodRZXqRQHsoiJAZxAzuKi60TTUJs41v0J-RR0u7VzT_RezVPz9wIqyz331JFN4rp7GNsMt3KGvtDaj0ZLIbGU");'
+                ></div>
+                <div>
+                  <p class="text-[#141414] text-base font-medium leading-normal">Summer Dress</p>
+                  <p class="text-neutral-500 text-sm font-normal leading-normal">Lightweight, breathable fabric</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBK6NF9wviDERck3qP9bZtiWuW343TXWzLzMwmIWzS46F-NkF3bKqUOxTQZEQOAGUTgmlD8du43CgqaIhf2o2wcJc0Pb8WyZ7mfThM1a4UzElQsoPRRo_d6-jF4sUjR_ilBZwLHiEDhjEmteHyMVqeimm4wv8ODgVGVJtUv1xqAzIYxcI_s345mUa3NbVM-_qX9Jo5_f-oEBe9C33HueVjp6K10a49Oie8CfPQpr1c0AeQ0mXO43GKWSuudYsl_DBQVnXEFJjLTEcs");'
+                ></div>
+                <div>
+                  <p class="text-[#141414] text-base font-medium leading-normal">Smart Home Security Camera</p>
+                  <p class="text-neutral-500 text-sm font-normal leading-normal">Motion detection, night vision</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDl4sI4ZlE9OhyQF7lc7ZJpZaUYaEYLBgE1W0RrfHp80MAxcGP_slZTfmXPEgkRAawJd8W8pSzfQaEtnXjoP0-1JE-dU6OusPgGf3Bz7BGdP2BlVHB1tW2abLc8FZJJQiBhJhafIwk8J5KUr4spn2u8qfUpKGStaWRcTQQ1LHV53_7yPlBT3NgvqZ52nhobYJO4JzFDcBUVDuTqTT8wDTsRGIfIfAHWTCy6Nv9kUsK_SXC-KfExMUBDpLS4_hlN449mIF6tSq-zo");'
+                ></div>
+                <div>
+                  <p class="text-[#141414] text-base font-medium leading-normal">Organic Face Serum</p>
+                  <p class="text-neutral-500 text-sm font-normal leading-normal">Natural ingredients, radiant skin</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCx06fzyGNvxWIbijtgkid9ZXKM8LPxZ8JuLd7QRkkpefG5DO4-QNW0qxS9pW5y9FUKu_HBoxcZzWCtvfrqYFB8JR73ylGs_hTcs9AoMG2AOdHUNU3J2vkv8f2eDpQ5pRA0NhABi-IhEx9AzWKug8M4b7eVIwtCIirhRIdF-us7ZBGQgMSnwiymWV9vc9Y5ea0_bgBKTczd4E-botZLT3c7rBeJFSAcZfQhsFtIUFufZPUjFRV-LM0GR1PW3nDDXATIgyWe4TY6UjY");'
+                ></div>
+                <div>
+                  <p class="text-[#141414] text-base font-medium leading-normal">Running Shoes</p>
+                  <p class="text-neutral-500 text-sm font-normal leading-normal">Comfortable, durable, high performance</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAey54FyhOm220idtBLb9Ayg1PEP5Y2QsKlQ17M5T-SH0_HYxm5ozpn1AqzZEAqyhdw7tf-3V-pGb9zpXkrt4kOQdzKTMdyQziOvNldhKqJT8HJ3nsS9JlwHMQAo8846f0_aBRjca97-f1RpZ2lZnDq0-1xrvJA7HB-JVjT2hEUxWrCtFjtDvf-j5okIlQom5GRGuv4uyLQLh8M9pNF2V0zbkPKtIkqy0NEAASygRhAXIirTGkdclREfXwcr-RCtdvZSHm9waZMOCU");'
+                ></div>
+                <div>
+                  <p class="text-[#141414] text-base font-medium leading-normal">Bluetooth Speaker</p>
+                  <p class="text-neutral-500 text-sm font-normal leading-normal">Portable, long battery life</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCP08vC4SV-OzX6AvK9i8et2Mn3Wy9QmUCtEYrP_VE2q9RXjXYkUc3xWAKcv0W3HU7w3x61SkJ76UmxCUluowNwxrIXglW3_oD3hIjJ7_CkCOgdtpUUopQeBdg9Rh1b4D6WTq-rhbA9myNzApMNL_Z6Bp5Sn1jLBTGASL3-Vc9ZFVddHW4hGoh7HAdnV9JjnOlDCE6NO4xhH8-IUDplp8yeVd1GCdiVVexJkL3fdT8ZOa1fGtiMx0ncIwQiHo7hL8oOxiaULNAbDbI");'
+                ></div>
+                <div>
+                  <p class="text-[#141414] text-base font-medium leading-normal">Casual Shirt</p>
+                  <p class="text-neutral-500 text-sm font-normal leading-normal">Stylish, comfortable, versatile</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDnd8xYszNAv4nhPV18S-SOijRSjhiG0e9cknUm3n9IzVT_goxXL4fn0TOR860optbVK7QlPW974l-LPbbyjc4aYE7_0C3JaSnC9mhzccdY5xGyqPYsWG0i8hKUp2LXtLerUY7cx-M-Ea-sP5CjXb9245BSa70uKca_a30eGCEGSidBeZDzB7BI3CfhmNGgiJ-mLA8wfkQBD4vejzJ3wfq1ob2Bjw8NX2v6zVfHC3GU1aEzqxM5u4xZFhC-HUthhHURFptwyq-9bVY");'
+                ></div>
+                <div>
+                  <p class="text-[#141414] text-base font-medium leading-normal">Electric Kettle</p>
+                  <p class="text-neutral-500 text-sm font-normal leading-normal">Fast boiling, auto shut-off</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDNFE_pQTs7dZgkitXlNv2vFMxb7egb1_N0uXAjytgi2XyqGc8lP-gedNuR72r1V4XiLTuCjC2F0b9Hh9gs0wNj09bf0i22T2OmC0b8P2xgH9En8omWMDAqc6R2vb5aJ7ElZn2EJlDX--VALcRbn6Or7ViprgViuayy0jqYb9PdWMq_g6siZwfPjEJIfNzsKWJFXQtTJ6vyW5aZgrR9KrjADaFdir-eVbhpbYuWclX-JBVXNcWuAHy8x41aVgYCoq_fK7DOVSpwTSo");'
+                ></div>
+                <div>
+                  <p class="text-[#141414] text-base font-medium leading-normal">Anti-Aging Cream</p>
+                  <p class="text-neutral-500 text-sm font-normal leading-normal">Reduces wrinkles, improves elasticity</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBdHGjh-8I_xJgZJhbz9YQX1HNDNnSezH9idbKLUfs8N_1vW0CTWJqoZtJOOybhlvMrK7HIBaLK4XgeOvWlxUqS3SpIGAi4yf2AXYOkrwX1a2A2tmrlcLet4sc94RhmHwvWqvk3dQhSpxZ64t6_b5ZjDeEGMFvuBEKRhaw8PKHaSkCa-D6JbYHQn51-OtWQpyIV4T8oSkOe-YAWdgT0fuhZ_LzF7bPvJtJmicANN_Aqc0PcWt6WYNFFJtFrrsJGkB5BGY3-QqzKiQI");'
+                ></div>
+                <div>
+                  <p class="text-[#141414] text-base font-medium leading-normal">Yoga Mat</p>
+                  <p class="text-neutral-500 text-sm font-normal leading-normal">Non-slip, eco-friendly</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-center p-4">
+              <a href="#" class="flex size-10 items-center justify-center">
+                <div class="text-[#141414]" data-icon="CaretLeft" data-size="18px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path>
+                  </svg>
+                </div>
+              </a>
+              <a class="text-sm font-bold leading-normal tracking-[0.015em] flex size-10 items-center justify-center text-[#141414] rounded-full bg-[#ededed]" href="#">1</a>
+              <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-[#141414] rounded-full" href="#">2</a>
+              <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-[#141414] rounded-full" href="#">3</a>
+              <span class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-[#141414] rounded-full" href="#">...</span>
+              <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-[#141414] rounded-full" href="#">10</a>
+              <a href="#" class="flex size-10 items-center justify-center">
+                <div class="text-[#141414]" data-icon="CaretRight" data-size="18px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- Product 2 -->
-    <div class="product">
-      <img src="https://img.alicdn.com/imgextra/i4/2210881576300/O1CN01y8YLyJ1WxqxEOnLTd_!!2210881576300.jpg" alt="LED Light" />
-      <h2>LED Room Light</h2>
-      <p>Stylish multicolor, USB powered – Room decor 2025.</p>
-      <div class="price">Rs. 430</div>
-      <a class="btn" href="https://wa.me/923495465573?text=Hi%2C%20I%20want%20to%20order%20LED%20Light%20from%20SastaMela.pk" target="_blank">📦 Order on WhatsApp</a>
-    </div>
-
-    <!-- Product 3 -->
-    <div class="product">
-      <img src="https://img.alicdn.com/imgextra/i1/2210225500049/O1CN01vG8imP1NDffIxdHZq_!!2210225500049.jpg" alt="Smart Watch" />
-      <h2>Smart Watch Pro Max</h2>
-      <p>Fitness + Health Tracker, Waterproof, Android + iPhone</p>
-      <div class="price">Rs. 1490</div>
-      <a class="btn" href="https://wa.me/923495465573?text=Hi%2C%20I%20want%20to%20order%20Smart%20Watch%20from%20SastaMela.pk" target="_blank">📦 Order on WhatsApp</a>
-    </div>
-
-    <!-- Product 4 -->
-    <div class="product">
-      <img src="https://img.alicdn.com/imgextra/i3/2200724112206/O1CN01i03cxV1OKowT4rNIN_!!2200724112206.jpg" alt="Bluetooth Earbuds" />
-      <h2>Bluetooth Earbuds</h2>
-      <p>Touch control, Noise canceling, Charging case included</p>
-      <div class="price">Rs. 990</div>
-      <a class="btn" href="https://wa.me/923495465573?text=Hi%2C%20I%20want%20to%20order%20Bluetooth%20Earbuds%20from%20SastaMela.pk" target="_blank">📦 Order on WhatsApp</a>
-    </div>
-  </div>
-
-  <footer>
-    © 2025 SastaMela.pk | Designed for Pakistan 🇵🇰
-  </footer>
-</body>
+  </body>
 </html>
