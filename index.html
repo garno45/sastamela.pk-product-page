@@ -1,28 +1,125 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Trendy Sneakers - SastaMela.pk</title>
+  <title>SastaMela.pk - Wholesale Products</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
-    .container { max-width: 800px; margin: 20px auto; background: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    img { width: 100%; max-width: 400px; display: block; margin: 0 auto 20px; }
-    h1 { color: #333; font-size: 26px; }
-    p { font-size: 16px; color: #555; line-height: 1.5; }
-    .price { font-size: 24px; color: green; margin: 15px 0; }
-    .btn { background: #25D366; color: #fff; padding: 12px 20px; border: none; border-radius: 5px; font-size: 18px; text-decoration: none; display: inline-block; margin-top: 20px; }
-    .btn:hover { background: #128C7E; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f2f2;
+    }
+    header {
+      background: #ff6600;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .product {
+      background: white;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .product h2 {
+      font-size: 18px;
+      margin: 10px 0 5px;
+      color: #333;
+    }
+    .product p {
+      font-size: 14px;
+      color: #666;
+    }
+    .price {
+      color: green;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .btn {
+      background-color: #25D366;
+      color: white;
+      padding: 10px 16px;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    .btn:hover {
+      background-color: #128C7E;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="https://img.alicdn.com/imgextra/i1/2206654846244/O1CN01i6PzXg1P6dX3nXemE_!!2206654846244.jpg" alt="Trendy Sneakers" />
-    <h1>Trendy Casual Sneakers 2025</h1>
-    <p>These stylish unisex sneakers are lightweight, breathable, and perfect for daily wear. Designed with comfort and durability in mind, they are your go-to choice for everyday fashion.</p>
-    <div class="price">Price: Rs. 950</div>
-    <a class="btn" href="https://wa.me/923495465573?text=Hi%2C%20I%20want%20to%20order%20the%20Trendy%20Sneakers%20from%20SastaMela.pk" target="_blank">Order on WhatsApp</a>
+  <header>
+    🛒 SastaMela.pk - Best Wholesale Deals!
+  </header>
+
+  <div class="products">
+    <!-- Product 1 -->
+    <div class="product">
+      <img src="https://img.alicdn.com/imgextra/i1/2206654846244/O1CN01i6PzXg1P6dX3nXemE_!!2206654846244.jpg" alt="Sneakers" />
+      <h2>Casual Sneakers 2025</h2>
+      <p>Unisex – Breathable, lightweight, imported design.</p>
+      <div class="price">Rs. 950</div>
+      <a class="btn" href="https://wa.me/923495465573?text=Hi%2C%20I%20want%20to%20order%20Sneakers%20from%20SastaMela.pk" target="_blank">📦 Order on WhatsApp</a>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <img src="https://img.alicdn.com/imgextra/i4/2210881576300/O1CN01y8YLyJ1WxqxEOnLTd_!!2210881576300.jpg" alt="LED Light" />
+      <h2>LED Room Light</h2>
+      <p>Stylish multicolor, USB powered – Room decor 2025.</p>
+      <div class="price">Rs. 430</div>
+      <a class="btn" href="https://wa.me/923495465573?text=Hi%2C%20I%20want%20to%20order%20LED%20Light%20from%20SastaMela.pk" target="_blank">📦 Order on WhatsApp</a>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="https://img.alicdn.com/imgextra/i1/2210225500049/O1CN01vG8imP1NDffIxdHZq_!!2210225500049.jpg" alt="Smart Watch" />
+      <h2>Smart Watch Pro Max</h2>
+      <p>Fitness + Health Tracker, Waterproof, Android + iPhone</p>
+      <div class="price">Rs. 1490</div>
+      <a class="btn" href="https://wa.me/923495465573?text=Hi%2C%20I%20want%20to%20order%20Smart%20Watch%20from%20SastaMela.pk" target="_blank">📦 Order on WhatsApp</a>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <img src="https://img.alicdn.com/imgextra/i3/2200724112206/O1CN01i03cxV1OKowT4rNIN_!!2200724112206.jpg" alt="Bluetooth Earbuds" />
+      <h2>Bluetooth Earbuds</h2>
+      <p>Touch control, Noise canceling, Charging case included</p>
+      <div class="price">Rs. 990</div>
+      <a class="btn" href="https://wa.me/923495465573?text=Hi%2C%20I%20want%20to%20order%20Bluetooth%20Earbuds%20from%20SastaMela.pk" target="_blank">📦 Order on WhatsApp</a>
+    </div>
   </div>
+
+  <footer>
+    © 2025 SastaMela.pk | Designed for Pakistan 🇵🇰
+  </footer>
 </body>
 </html>
